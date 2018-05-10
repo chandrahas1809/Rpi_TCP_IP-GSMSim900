@@ -1,8 +1,11 @@
 import time
 import serial
 check=1
-# configure the serrial port S0 with the baudarte
-port= serial.Serial(port='/dev/ttyS0',baudrate =9600,parity=serial.PARITY_NONE,stopbits=serial.STOPBITS_ONE,bytesize=serial.EIGHTBITS,timeout=1)
+# configure the serrial port S0 with the baudarte 9600 with no parity bits
+port= serial.Serial(port='/dev/ttyS0',
+                    baudrate =9600,parity=serial.PARITY_NONE,
+                    stopbits=serial.STOPBITS_ONE,
+                    bytesize=serial.EIGHTBITS,timeout=1)
 
 def gsm_init():
     # to check the modem put basic AT command
