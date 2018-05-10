@@ -13,7 +13,6 @@ def gsm_init():
     print(port.read(100))
     #Attach or Detach from GPRS Service (Result  1 = Attach , 2 = Detached )
     port.write('AT+CGATT?'+'\r\n')
-   
     time.sleep(0.2)
     #Read 100 bytes from GSM Module
     print(port.read(100))
